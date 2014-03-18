@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Ejercicio 1 Crea un documento XML que almacene datos de grupos musicales:
+
+  Nombre del grupo.
+  Miembros, de los que nos interesa:
+    Su nombre de pila,
+    Apellido.
+    Relación con el grupo: vocalista, teclista, compositor, etc.
+    
+  Un grupo puede tener varios miembros y cada miembro hacer varias
+  funciones en el grupo. Además nos interesa guardar un enlace web
+  para amplicar información tanto de grupos como de cada uno de sus miembros.
+-->
+
+<!DOCTYPE grupo[
+  <!ELEMENT grupo (nombre, web?, miembros)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+    <!ELEMENT miembros (miembro+)>
+      <!ELEMENT miembro (nombre, apellido, relacion, web?)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT relacion (#PCDATA)>
+]>
+
+<grupo>
+  <nombre>El canto verde</nombre>
+  <web>http://algo.es</web>
+  <miembros>
+    <miembro>
+      <nombre>Juan</nombre>
+      <apellido>Ramirez</apellido>
+      <relacion>Vocalista</relacion>
+      <web>http://suweb.es</web>
+    </miembro>
+    <miembro>
+      <nombre>Pepe</nombre>
+      <apellido>Phone</apellido>
+      <relacion>Telefonista</relacion>
+    </miembro>
+  </miembros>
+</grupo>

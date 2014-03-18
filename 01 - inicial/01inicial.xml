@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<club nombre="madrid">
+	<deportista>
+		<nombre>Juan</nombre>
+		<posicion>Delantero</posicion>
+	</deportista>
+	<deportista>
+		<nombre>Pablo</nombre>
+		<posicion>Defensa</posicion>
+	</deportista>
+	<deportista>
+		<nombre>Carlos</nombre>
+		<posicion>Portero</posicion>
+	</deportista>
+	<deportista>
+		<nombre>Rodrigo</nombre>
+		<posicion>Central</posicion>
+	</deportista>
+	<deportista>
+		<nombre>Luis</nombre>
+		<posicion>Central</posicion>
+	</deportista>
+</club>
