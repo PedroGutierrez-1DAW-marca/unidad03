@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Ejercicio 2 Se desea guardar en formato XML la información relativa a tickets de compra, según las siguientes especificaciones:
+
+  Datos del ticket:
+    Código del ticket. Obligatorio.
+    Fecha y hora.
+    Precio total: Precio sin IVA total, Cantidad IVA y PVP total
+    Forma de pago: puede ser en efectivo o con tarjeta.
+    Si usa tarjeta: Tipo de tarjeta. 12 asteriscos y los cuatro últimos números de la tarjeta, Nombre del cliente.
+  Datos del comercio
+    Nombre.
+    Dirección completa.
+    CIF.
+    Teléfono.
+  Datos de la compra:
+    Línea de compra:
+      Nombre del artículo.
+      Cantidad.
+      Precio unitario (sin IVA).
+      IVA
+      PVP
+
+Escribe un par de documentos XML que se ajusten a las especificaciones dadas.
+
+-->
+
+<!DOCTYPE ticket [
+  <!ELEMENT ticket (codigo, fecha?, total, formadepago, tarjeta?, comercio, compra)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT total (#PCDATA)>
+    <!ELEMENT formadepago (#PCDATA)>
+    <!ELEMENT tarjeta (tipo, numero, cliente)>
+      <!ELEMENT tipo (#PCDATA)>
+      <!ELEMENT numero (#PCDATA)>
+      <!ELEMENT cliente (#PCDATA)>
+    <!ELEMENT comercio (nombre, direccion, cif, telefono)>
+      <!ELEMENT nombre (#PCDATA)>
+      <!ELEMENT direccion (#PCDATA)>
+      <!ELEMENT cif (#PCDATA)>
+      <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT compra (articulo*)>
+      <!ELEMENT articulo (nombre, cantidad, precio, iva)>
+        <!ELEMENT cantidad (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT iva (#PCDATA)>
+]>
+
+<ticket>
+  <codigo>9191893274</codigo>
+  <fecha>2012/10/23 23:54</fecha>
+  <total>123</total>
+  <formadepago>tarjeta</formadepago>
+  <tarjeta>
+    <tipo>visa</tipo>
+    <numero>************9909</numero>
+    <cliente>Paco Perez</cliente>
+  </tarjeta>
+  <comercio>
+    <nombre>Dia</nombre>
+    <direccion>C/ Fuente, 45. Toledo, Toledo</direccion>
+    <cif>A10101010</cif>
+    <telefono>635998998</telefono>
+  </comercio>
+  <compra>
+    <articulo>
+      <nombre>Cliflor</nombre>
+      <cantidad>3</cantidad>
+      <precio>0.34</precio>
+      <iva>8</iva>
+    </articulo>
+    <articulo>
+      <nombre>Azucar</nombre>
+      <cantidad>1</cantidad>
+      <precio>0.40</precio>
+      <iva>12</iva>
+    </articulo>
+    <articulo>
+      <nombre>Tarta</nombre>
+      <cantidad>1</cantidad>
+      <precio>2.31</precio>
+      <iva>21</iva>
+    </articulo>
+  </compra>
+</ticket>
+
+
