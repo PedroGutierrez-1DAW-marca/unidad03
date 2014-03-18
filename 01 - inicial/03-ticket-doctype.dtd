@@ -1,0 +1,48 @@
+<!--
+Ejercicio 2 Se desea guardar en formato XML la información relativa a tickets de compra, según las siguientes especificaciones:
+
+  Datos del ticket:
+    Código del ticket. Obligatorio.
+    Fecha y hora.
+    Precio total: Precio sin IVA total, Cantidad IVA y PVP total
+    Forma de pago: puede ser en efectivo o con tarjeta.
+    Si usa tarjeta: Tipo de tarjeta. 12 asteriscos y los cuatro últimos números de la tarjeta, Nombre del cliente.
+  Datos del comercio
+    Nombre.
+    Dirección completa.
+    CIF.
+    Teléfono.
+  Datos de la compra:
+    Línea de compra:
+      Nombre del artículo.
+      Cantidad.
+      Precio unitario (sin IVA).
+      IVA
+      PVP
+
+Escribe un par de documentos XML que se ajusten a las especificaciones dadas.
+
+-->
+<!ELEMENT ticket (tarjeta?, comercio, compra)>
+  <!ATTLIST ticket
+    codigo CDATA #REQUIRED
+    fecha CDATA #IMPLIED
+    total CDATA #IMPLIED
+    formadepago (efectivo|tarjeta) #IMPLIED>
+  <!ELEMENT tarjeta EMPTY>
+    <!ATTLIST tarjeta
+      tipo (visa|mastercard|americanexpress) #REQUIRED
+      numero CDATA #REQUIRED
+      cliente CDATA #REQUIRED>
+  <!ELEMENT comercio EMPTY>
+    <!ATTLIST comercio
+      nombre CDATA #REQUIRED
+      direccion CDATA #REQUIRED
+      cif NMTOKEN #REQUIRED
+      telefono NMTOKEN #REQUIRED>
+  <!ELEMENT compra (articulo*)>
+    <!ELEMENT articulo (#PCDATA)>
+      <!ATTLIST articulo
+        cantidad NMTOKEN #IMPLIED
+        precio NMTOKEN #REQUIRED
+        iva (4|8|12|21) #REQUIRED>

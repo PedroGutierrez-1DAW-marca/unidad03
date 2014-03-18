@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ticket PUBLIC "ticket" "E:/clase/2013-2014/Marca/03%20-%20XML/01%20-%20inicial/03-ticket-doctype.dtd">
+
+<ticket codigo="9866521554" fecha="2013/01/12 10:49" total="85.26" formadepago="efectivo">
+  <comercio nombre="Dia" direccion="C/ Fuente, 45. Toledo, Toledo" cif="A10101010" telefono="635998998"></comercio>
+  <compra>
+    <articulo iva="8" precio="0.52">Coliflor</articulo>
+    <articulo iva="21" precio="3.21" cantidad="2">Tarta</articulo>
+    <articulo iva="4" precio="0.78" cantidad="10">Garrafa de agua</articulo>
+    <articulo iva="21" precio="4.97">Abre latas</articulo>
+  </compra>
+</ticket>
+
+
