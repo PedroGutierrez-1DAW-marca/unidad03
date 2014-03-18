@@ -1,0 +1,43 @@
+<!--
+  Se estÃƒÂ¡ pensando en crear una aplicaciÃƒÂ³n que ofrezca informaciÃƒÂ³n actual de los partidos de futbol en un dÃƒÂ­a determinado. Las necesidades son las siguientes:
+
+  El documento guardarÃƒÂ¡ datos de varios partidos.
+  Cada partido tiene:
+    Un id ÃƒÂºnico.
+    Nombre de la competiciÃƒÂ³n
+      AÃƒÂ±o de la competiciÃƒÂ³n.
+      Jornada en su competiciÃƒÂ³n.
+    Nombre de equipo local.
+      Bandera del equipo local (enlace).
+    Nombre de equipo visitante.
+      Bandera del equipo visitante (enlace).
+    Fecha, hora y minuto de comienzo del partido.
+    Resultado.
+=>  Estado (terminado/jugando/aplazado)
+      Minuto de juego cuando se genera este archivo.
+    Canales de retrasmisiÃƒÂ³n (nombre y enlace al logo de cada canal donde se retransmite)
+-->
+<!ELEMENT partido (id, competicion, elocal, evisitante, resultado, informacion, retransmision)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT competicion (nombre, anio, jornada)>
+    <!--<!ELEMENT nombre (#PCDATA)>-->
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT jornada (#PCDATA)>
+  <!ELEMENT elocal (nombre, escudo)>
+  <!ELEMENT evisitante (nombre, escudo)>
+    <!--<!ELEMENT nombre (#PCDATA)>-->
+    <!ELEMENT escudo (#PCDATA)>
+  <!ELEMENT resultado (glocal, gvisitante)>
+    <!ELEMENT glocal (#PCDATA)>
+    <!ELEMENT gvisitante (#PCDATA)>
+  <!ELEMENT informacion (estado, minutos, inicio)>
+    <!ELEMENT estado (#PCDATA)>
+    <!ELEMENT minutos (#PCDATA)>
+    <!ELEMENT inicio (fecha, hora, minuto)>
+      <!ELEMENT fecha (#PCDATA)>
+      <!ELEMENT hora (#PCDATA)>
+      <!ELEMENT minuto (#PCDATA)>
+  <!ELEMENT retransmision (canal+)>
+    <!ELEMENT canal (nombre, logo)>
+      <!ELEMENT nombre (#PCDATA)>
+      <!ELEMENT logo (#PCDATA)>

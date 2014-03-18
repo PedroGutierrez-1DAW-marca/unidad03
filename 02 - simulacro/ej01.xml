@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Champions league de 2013.
+  Jornada: Octavos
+  Barcelona – Milan
+  Inicio del partido: 20:45 12/03/2013
+  Al minuto 65, resultado 1:0
+  Se retransmite en Canal + Liga de Campeones
+-->
+<!DOCTYPE partido PUBLIC "partido" "E:/clase/2013-2014/Marca/03%20-%20XML/02%20-%20simulacro/ej01.dtd">
+
+<partido>
+  <id>34927</id>
+  <competicion>
+    <nombre>Champions league</nombre>
+    <anio>2013</anio>
+    <jornada>octavos</jornada>
+  </competicion>
+  <elocal>
+    <nombre>Barcelona</nombre>
+    <escudo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHi-iWwJdQzMan7Wax700KbG43Wx8f47nHaW3WhmuZUMk7wCv-</escudo>
+  </elocal>
+  <evisitante>
+    <nombre>Milan</nombre>
+    <escudo>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxAkH1O4beCWfHyLjYum1tHzIx3AXPNvqSC1HXUql40sufMCpdUQ</escudo>
+  </evisitante>
+  <resultado>
+    <glocal>1</glocal>
+    <gvisitante>0</gvisitante>
+  </resultado>
+  <informacion>
+    <estado>jugando</estado>
+    <minutos>65</minutos>
+    <inicio>
+      <fecha>12/03/2013</fecha>
+      <hora>20</hora>
+      <minuto>45</minuto>
+    </inicio>
+  </informacion>
+  <retransmision>
+    <canal>
+      <nombre>Canal + Liga de Campeones</nombre>
+      <logo>http://www.vivafutbol.es/images/stories/Fotos_Noticias/00_99/canal_plus_liga_campeones.jpg</logo>
+    </canal>
+  </retransmision>
+</partido>
