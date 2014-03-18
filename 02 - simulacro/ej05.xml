@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE diapositiva [
+  <!ELEMENT diapositiva (titulo, punto*)>
+    <!ATTLIST diapositiva tipo NMTOKEN #REQUIRED>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT punto ANY>
+      
+]>
+
+<!-- DIAPOSITIVA TITULO --><!--
+<diapositiva tipo="todas">
+  <titulo>Wake up to WonderWidgets!</titulo>
+</diapositiva>
+-->
+
+<!-- INDICE -->
+<diapositiva tipo="todas">
+    <titulo>Overview</titulo>
+    <punto>Por qué XML es mejor </punto>
+    <punto/>
+    <punto>Quién utiliza XML</punto>
+</diapositiva>
