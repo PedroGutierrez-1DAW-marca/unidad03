@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<etapaciclista>
+  <!-- EQUIPOS -->
+  <equipos>
+    <equipo>
+      <nombre>Equipo 1</nombre>
+      <director>Director Equipo 1</director>
+    </equipo> 
+    <equipo>
+      <nombre>Equipo 2</nombre>
+      <director>Director Equipo 2</director>
+    </equipo>
+  </equipos>
+  <!-- CICLISTAS -->
+  <ciclistas>
+    <ciclista>
+      <nombre>Cilista 1</nombre>
+      <dorsal>24</dorsal>
+      <edad>32</edad>
+      <equipo>Equipo 1</equipo>
+      <posicionetapa>3</posicionetapa>
+      <tiempoetapa>
+        <horas>6</horas>
+        <minutos>21</minutos>
+        <segundos>43</segundos>
+      </tiempoetapa>
+    </ciclista>
+    <ciclista>
+      <nombre>Cilista 2</nombre>
+      <dorsal>38</dorsal>
+      <edad>30</edad>
+      <equipo>Equipo 1</equipo>
+      <posicionetapa>4</posicionetapa>
+      <tiempoetapa>
+        <horas>6</horas>
+        <minutos>22</minutos>
+        <segundos>43</segundos>
+      </tiempoetapa>
+    </ciclista>
+    <ciclista>
+      <nombre>Cilista 3</nombre>
+      <dorsal>8</dorsal>
+      <edad>28</edad>
+      <equipo>Equipo 2</equipo>
+      <posicionetapa>2</posicionetapa>
+      <tiempoetapa>
+        <horas>6</horas>
+        <minutos>20</minutos>
+        <segundos>43</segundos>
+      </tiempoetapa>
+    </ciclista>
+    <ciclista>
+      <nombre>Cilista 5</nombre>
+      <dorsal>38</dorsal>
+      <edad>31</edad>
+      <equipo>Equipo 2</equipo>
+      <posicionetapa>5</posicionetapa>
+      <tiempoetapa>
+        <horas>7</horas>
+        <minutos>19</minutos>
+        <segundos>29</segundos>
+      </tiempoetapa>
+    </ciclista>
+  </ciclistas>
+  <!-- INFORMACIÓN -->
+  <informacionetapa>
+    <numero>3</numero>
+    <kilometros>240</kilometros>
+    <salida>Cuenca</salida>
+    <llegada>Toledo</llegada>
+  </informacionetapa>
+  <!-- PUERTOS -->
+  <puertos>
+    <puerto>
+      <kilometro>80</kilometro>
+      <altura>1200</altura>
+      <pendiente>12</pendiente>
+      <categoria>1</categoria>
+      <pasanporpuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 1</nombre>
+          <tiempopuerto>
+            <horas>2</horas>
+            <minutos>20</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 2</nombre>
+          <tiempopuerto>
+            <horas>2</horas>
+            <minutos>30</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 3</nombre>
+          <tiempopuerto>
+            <horas>2</horas>
+            <minutos>40</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 4</nombre>
+          <tiempopuerto>
+            <horas>2</horas>
+            <minutos>20</minutos>
+            <segundos>25</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 5</nombre>
+          <tiempopuerto>
+            <horas>2</horas>
+            <minutos>26</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+      </pasanporpuerto>
+    </puerto>
+    <puerto>
+      <kilometro>134</kilometro>
+      <altura>1450</altura>
+      <pendiente>14</pendiente>
+      <categoria>2</categoria>
+      <pasanporpuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 1</nombre>
+          <tiempopuerto>
+            <horas>3</horas>
+            <minutos>20</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 2</nombre>
+          <tiempopuerto>
+            <horas>3</horas>
+            <minutos>30</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 3</nombre>
+          <tiempopuerto>
+            <horas>3</horas>
+            <minutos>40</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 4</nombre>
+          <tiempopuerto>
+            <horas>3</horas>
+            <minutos>20</minutos>
+            <segundos>25</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 5</nombre>
+          <tiempopuerto>
+            <horas>3</horas>
+            <minutos>26</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+      </pasanporpuerto>
+    </puerto>
+    <puerto>
+      <kilometro>204</kilometro>
+      <altura>1120</altura>
+      <pendiente>8</pendiente>
+      <categoria>E</categoria>
+      <pasanporpuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 1</nombre>
+          <tiempopuerto>
+            <horas>4</horas>
+            <minutos>20</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 2</nombre>
+          <tiempopuerto>
+            <horas>4</horas>
+            <minutos>30</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 3</nombre>
+          <tiempopuerto>
+            <horas>4</horas>
+            <minutos>40</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 4</nombre>
+          <tiempopuerto>
+            <horas>4</horas>
+            <minutos>20</minutos>
+            <segundos>25</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+        <ciclistapuerto>
+          <nombre>Ciclista 5</nombre>
+          <tiempopuerto>
+            <horas>4</horas>
+            <minutos>26</minutos>
+            <segundos>30</segundos>
+          </tiempopuerto>
+        </ciclistapuerto>
+      </pasanporpuerto>
+    </puerto>
+  </puertos>
+  <!-- MALLOTS -->
+  <mallots>
+    <mallot>
+      <tipo>general</tipo>
+      <color>rojo</color>
+      <ciclistasmallot>
+        <nombre>Cilista 1</nombre>
+        <nombre>Cilista 2</nombre>
+      </ciclistasmallot>
+    </mallot>
+    <mallot>
+      <tipo>puntos</tipo>
+      <color>verde</color>
+      <ciclistasmallot>
+        <nombre>Cilista 3</nombre>
+        <nombre>Cilista 2</nombre>
+      </ciclistasmallot>
+    </mallot>
+    <mallot>
+      <tipo>montania</tipo>
+      <color>puntos</color>
+      <ciclistasmallot>
+        <nombre>Cilista 3</nombre>
+        <nombre>Cilista 4</nombre>
+      </ciclistasmallot>
+    </mallot>
+    <mallot>
+      <tipo>combinada</tipo>
+      <color>blanco</color>
+      <ciclistasmallot>
+        <nombre>Cilista 5</nombre>
+        <nombre>Cilista 4</nombre>
+      </ciclistasmallot>
+    </mallot>
+  </mallots>
+</etapaciclista>
+
+
+
