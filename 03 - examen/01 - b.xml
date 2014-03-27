@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE etapaciclista SYSTEM "E:/clase/2013-2014/Marca/03%20-%20XML/03%20-%20examen/01%20-%20b.dtd">
+
+<etapaciclista numero="3" kilometros="240" salida="cuenca" llegada="toledo">
+  <!-- EQUIPOS -->
+  <equipos>
+    <equipo id="e01" nombre="Banesto" director="Juan Perez"></equipo>
+    <equipo id="e02" nombre="Santander" director="Carlos Perez"></equipo>
+    <equipo id="e03" nombre="Unicaja" director="Carlos Perez"></equipo>
+  </equipos>
+  <!-- CICLISTAS -->
+  <ciclistas>
+    <ciclista id="c01" nombre="Pepe Román" edad="28" dorsal="21" equipo="e01" posicion="4">
+      <tiempo hora="7" minuto="21" segundo="23"></tiempo>
+    </ciclista>
+    <ciclista id="c02" nombre="Juan Román" edad="29" dorsal="24" equipo="e01" posicion="6">
+      <tiempo hora="7" minuto="23" segundo="23"></tiempo>
+    </ciclista>
+    <ciclista id="c03" nombre="Carlos Román" edad="30" dorsal="31" equipo="e02" posicion="5">
+      <tiempo hora="7" minuto="22" segundo="23"></tiempo>
+    </ciclista>
+    <ciclista id="c04" nombre="Manolo Román" edad="32" dorsal="12" equipo="e02" posicion="3">
+      <tiempo hora="7" minuto="20" segundo="23"></tiempo>
+    </ciclista>
+    <ciclista id="c05" nombre="Vicente Román" edad="27" dorsal="14" equipo="e03" posicion="2">
+      <tiempo hora="7" minuto="19" segundo="23"></tiempo>
+    </ciclista>
+    <ciclista id="c06" nombre="Luis Román" edad="29" dorsal="8" equipo="e03" posicion="1">
+      <tiempo hora="7" minuto="11" segundo="23"></tiempo>
+    </ciclista>
+  </ciclistas>
+  <!-- PUERTOS -->
+  <puertos>
+    <puerto kilometro="80" altura="1200" pendiente="12" categoria="1">
+      <cilistapasa ciclista="c01" posicion="3">
+        <tiempo hora="1" minuto="43" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c02" posicion="5">
+        <tiempo hora="1" minuto="47" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c04" posicion="4">
+        <tiempo hora="1" minuto="45" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c05" posicion="2">
+        <tiempo hora="1" minuto="40" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c06" posicion="1">
+        <tiempo hora="1" minuto="39" segundo="12"></tiempo>
+      </cilistapasa>
+    </puerto>
+    <puerto kilometro="120" altura="1280" pendiente="11" categoria="E">
+      <cilistapasa ciclista="c01" posicion="3">
+        <tiempo hora="2" minuto="43" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c03" posicion="5">
+        <tiempo hora="2" minuto="47" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c04" posicion="4">
+        <tiempo hora="2" minuto="45" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c05" posicion="2">
+        <tiempo hora="2" minuto="40" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c06" posicion="1">
+        <tiempo hora="2" minuto="39" segundo="12"></tiempo>
+      </cilistapasa>
+    </puerto>
+    <puerto kilometro="180" altura="1480" pendiente="11" categoria="3">
+      <cilistapasa ciclista="c01" posicion="4">
+        <tiempo hora="4" minuto="43" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c03" posicion="5">
+        <tiempo hora="4" minuto="47" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c04" posicion="3">
+        <tiempo hora="4" minuto="45" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c05" posicion="2">
+        <tiempo hora="4" minuto="40" segundo="12"></tiempo>
+      </cilistapasa>
+      <cilistapasa ciclista="c06" posicion="1">
+        <tiempo hora="4" minuto="39" segundo="12"></tiempo>
+      </cilistapasa>
+    </puerto>
+  </puertos>
+  <!-- MALLOTS -->
+  <mallots>
+    <mallot tipo="general" color="rojo" ciclistas="c01 c04"></mallot>
+    <mallot tipo="puntos" color="verde" ciclistas="c02 c04"></mallot>
+    <mallot tipo="montania" color="puntos" ciclistas="c05 c03"></mallot>
+    <mallot tipo="combinada" color="blanco" ciclistas="c06 c01"></mallot>
+  </mallots>
+</etapaciclista>
