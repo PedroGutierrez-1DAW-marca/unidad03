@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE toolbox [
+  <!ELEMENT toolbox (menubar+)>
+    <!ATTLIST toolbox
+      flex (0|1) #REQUIRED>
+    <!ELEMENT menubar (menu+)>
+      <!ELEMENT menu (menupop*)>
+        <!ATTLIST menu
+          label CDATA #REQUIRED>
+        <!ELEMENT menupop (menuitem | menuseparator)*>
+          <!ELEMENT menuitem EMPTY>
+            <!ATTLIST menuitem
+              label CDATA #REQUIRED>
+          <!ELEMENT menuseparator EMPTY>
+
+]>
+
+<toolbox flex="1">
+  <menubar>
+    <menu label="Archivo">
+      <menupop>
+        <menuitem label="Abrir" />
+        <menuitem label="Cerrar" />
+        <menuseparator />
+        <menuitem label="Salir" />
+      </menupop>
+    </menu>
+    <menu label="Ayuda">
+      <menupop>
+        <menuitem label="Manual" />
+      </menupop>
+    </menu>
+  </menubar>
+</toolbox>
